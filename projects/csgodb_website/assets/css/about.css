@@ -1,0 +1,27 @@
+#body {
+  background-color: #3a3a3a;
+}
+
+#container_header {
+  margin: auto;
+  width: 1000px;
+}
+
+#grid_container {
+	display: grid;
+	width: 1000px;
+	margin: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+	grid-gap: 10px;
+	grid-auto-rows: minmax(100px,auto);
+	margin-bottom: 10px;
+}
+
+.boxExplore {
+	background: #232323;
+  border-radius: 5px;
+  color: #939393;
+  border: 1px solid black;
+  padding: 15px;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> CSGO Skin Database </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/css/explore.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="body">
+	<div id="container_header">
+		<nav class="navbar navbar-inverse">
+		<img src="assets/media/csgodblogo.png" href="index.html" alt="CSGO:DB Logo"/>
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"> CSGO SkinDB </a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="index.html"> Home </a></li>
+	      <li class="active"><a href="#"> Explore </a></li>
+        <li><a href="info.html"> What is CS:GO? </a></li>
+	      <li><a href="about.html"> About </a></li>
+        <li><a href="resources.html"> Resources </a></li>
+	    </ul>
+      <form class="navbar-form navbar-left" onsubmit="return false;">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search" id="form">
+        </div>
+        <button type="submit" class="btn btn-default" onclick="search(); searchTerm(); loading()"> Submit </button>
+      </form>
+	  </div>
+		</nav>
+	</div>
+
+	<div id="grid_container" style="visibility: hidden">
+		<div class="boxExplore" id="headertext">
+      <h1><span id="count"></span> Results For: <i><span id="searchedWord"></span></i></h1>
+    </div>
+    <div class="boxExplore" id="foundDivs">
+    </div>
+	</div>
+
+  <h2 id="loading" style="display: fixed; visibility: hidden"> Fetching Data </h2>
+
+<script src="assets/search.js"></script>
+<script src="assets/loading.js"></script>
+<script>
+var keyword = "";
+function searchTerm(){
+  keyword = document.getElementById("form").value
+  document.getElementById("searchedWord").innerHTML = keyword
+}
+</script>
+</body>
+</html>

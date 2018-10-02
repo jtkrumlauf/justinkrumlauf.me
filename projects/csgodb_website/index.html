@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> CSGO Skin Database </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/css/home.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="body" onload="featured()">
+	<div id="container_header">
+		<nav class="navbar navbar-inverse">
+		<img src="assets/media/csgodblogo.png" alt="CSGO:DB Logo"/>
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#"> CSGO SkinDB </a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li class="active"><a href="#"> Home </a></li>
+	      <li><a href="explore.html"> Explore </a></li>
+        <li><a href="info.html"> What is CS:GO? </a></li>
+	      <li><a href="about.html"> About </a></li>
+        <li><a href="resources.html"> Resources </a></li>
+	    </ul>
+	  </div>
+		</nav>
+	</div>
+
+	<div id="grid_container">
+		<div class="boxL">
+			<h1> Featured Item </h1>
+			<p id="item_name"> Loading... </p>
+			<img id="featured_image" src="img" width="250px" height="250px" alt="Featured Item"/> <!--set min height and width-->
+			<span id="featured_item_price"> Average Price: Loading... </span>
+		</div>
+		<div class="boxR">
+			<h1> Most Popular Items </h1>
+      <button id="button" onclick="popular()"> Show Popular Items </button>
+			<ol>
+				<li id="p_item1">  </li>
+				<li id="p_item2">  </li>
+				<li id="p_item3">  </li>
+				<li id="p_item4">  </li>
+				<li id="p_item5">  </li>
+        <li id="p_item6">  </li>
+				<li id="p_item7">  </li>
+				<li id="p_item8">  </li>
+				<li id="p_item9">  </li>
+				<li id="p_item10">  </li>
+			</ol>
+		</div>
+		<div class="boxL">
+			<h1> Item Rarity Key: </h1>
+			<ol>
+				<li><span style="color: #E4AE39"> Contraband </span></li>
+				<li><span style="color: #EB4B4B"> Covert </span></li>
+				<li><span style="color: #8847FF"> Classified </span></li>
+				<li><span style="color: #D32CE6"> Restricted </span></li>
+				<li><span style="color: #4B69FF"> Mil-Spec </span></li>
+				<li><span style="color: #5E98D9"> Industrial Grade </span></li>
+				<li><span style="color: #B0C3D9"> Consumer Grade </span></li>
+			</ol>
+		</div>
+	</div>
+
+
+	
+
+<script src="assets/featured.js"></script> <!-- Script for popular is in this file too-->
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> CSGO Skin Database </title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="assets/css/explore.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body id="body">
+	<div id="container_header">
+		<nav class="navbar navbar-inverse">
+		<img src="assets/media/csgodblogo.png" href="index.html" alt="CSGO:DB Logo"/>
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="index.html"> CSGO SkinDB </a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="index.html"> Home </a></li>
+	      <li><a href="explore.html"> Explore </a></li>
+        <li><a href="info.html"> What is CS:GO? </a></li>
+	      <li class="active"><a href="#"> About </a></li>
+        <li><a href="resources.html"> Resources </a></li>
+	    </ul>
+	  </div>
+		</nav>
+	</div>
+
+	<div id="grid_container">
+		<div class="boxExplore" id="headertext">
+      <h1> About CSGO:DB </h1>
+    </div>
+    <div class="boxExplore">
+      <h3> API </h3>
+      <p> CSGO:DB uses the <a href="http://csgo.steamlytics.xyz/api">Steamlytics:CSGO</a> API to determine the prices and rarity of items in real time. Since I have the Free Plan, I am only allowed 10 API calls per minute and 500 per day. </p>
+
+      <h3> Source Code </h3>
+      <ul>
+        <li><a href="assets/search.js"> search.js</a>: used for the searching and displaying of items on explore.html </li>
+        <li><a href="assets/loading.js"> loading.js</a>: an indication that the data is being complied. Used in explore.html </li>
+        <li><a href="assets/featured.js"> featured.js</a>: used to randomly select an item and display on index.html </li>
+      </ul>
+    </div>
+    <div class="boxExplore">
+      <h3> Summary </h3>
+      <p> There are many aspects of my project that I believe should be taken into concideration when determining my final grade. First, I decided to utilize an Application Programming Interface (API) to enhance my website's functionality and appeal. It was of paramount importance that the data was kept up to date, otherwise, I would have used a text file or some other static document. I believe the API adds functionality and keeps the content of the website dynamic and interesting. Another strong point of my website is the extensive scripting that went into making sure the user experience was as smooth as possible. I tried to write code that would catch and deal with as many abnormalities that could occur. This would provide a more pleasent user experience. Finally, while small, I believe that my color scheme and overall website layout was pretty good. I tried to design my website around the content as much as possible while still maintaining a clean and polished look. </p>
+      <p> While my site had alot of strong points, there were many aspects that could have been improved upon. First, the speed at which the content is displayed. I could not figure out whether the API was the problem or if it was the way I was implementing it. The time it takes for each part of the page to be displayed is much longer than I would like it to be. Another thing I believe my site could improve on is displaying the item's in a more appealing way. Since the API is slow, it doesnt let me display photos that I would like to. My problems stem from the speed of the API and how long it takes for my scripts to get the data. As a result, while building my site, I had issues making multiple API calls and displaying the correct information. </p>
+    </div>
+	</div>
+</body>
+</html>
