@@ -5,6 +5,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="../assets/css/main.css" />
+		<link rel="stylesheet" href="../assets/css/galleries.css" />
 	</head>
 	<body class="subpage">
 
@@ -42,15 +43,71 @@
 			</section>
 
 		<!-- Two -->
-			<section id="two" class="wrapper style2">
-				<div class="inner">
-					<div class="box">
-						<div class="content">
-              <p> CS:GO DB Gallery Currently Under Construction </p>
+		<section id="two" class="wrapper style2">
+			<div class="inner">
+				<div class="box">
+					<div class="content">
+						<div class="box alt">
+							<a href="../projects/csgodb.html" class="icon fa-arrow-left"> CS:GO DB Project Page</a>
+							<br>
+							<br>
+							<div class="row 50% uniform">
+								<div class="4u"><span class="image fit"><img src="../gallery_photos/csgodb_gallery/home_csgodb.PNG" alt="" onclick="openModal();currentSlide(1)" class="hover-shadow cursor" /></span></div>
+								<div class="4u"><span class="image fit"><img src="../gallery_photos/csgodb_gallery/search_csgodb.PNG" alt="" onclick="openModal();currentSlide(2)" class="hover-shadow cursor" /></span></div>
+								<div class="4u$"><span class="image fit"><img src="../gallery_photos/csgodb_gallery/about_csgodb.PNG" alt="" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" /></span></div>
+								<!-- Break -->
+								<div class="4u"><span class="image fit"><img src="../gallery_photos/csgodb_gallery/what_is_csgo_csgodb.PNG" alt="" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" /></span></div>
+								</div>
+						</div>
+
+
+						<div id="myModal" class="modal">
+							<span class="close cursor" onclick="closeModal()">&times;</span>
+							<div class="modal-content">
+								<div class="mySlides">
+									<div class="numbertext">1</div>
+									<img src="../gallery_photos/csgodb_gallery/home_csgodb.PNG" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">2</div>
+									<img src="../gallery_photos/csgodb_gallery/search_csgodb.PNG" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">3</div>
+									<img src="../gallery_photos/csgodb_gallery/about_csgodb.PNG" style="width:100%">
+								</div>
+								<div class="mySlides">
+									<div class="numbertext">4</div>
+									<img src="../gallery_photos/csgodb_gallery/what_is_csgo_csgodb.PNG" style="width:100%">
+								</div>
+
+								<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+								<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+								<div class="caption-container">
+									<p id="caption"></p>
+								</div>
+
+
+								<div class="column">
+									<img class="demo cursor" src="../gallery_photos/csgodb_gallery/home_csgodb.PNG" style="width:100%" onclick="currentSlide(1)" alt="CS:GO DB Home Page">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../gallery_photos/csgodb_gallery/search_csgodb.PNG" style="width:100%" onclick="currentSlide(2)" alt="Search functionality e.x used: AWP | Dragon Lore">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../gallery_photos/csgodb_gallery/about_csgodb.PNG" style="width:100%" onclick="currentSlide(3)" alt="About CSGO DB">
+								</div>
+								<div class="column">
+									<img class="demo cursor" src="../gallery_photos/csgodb_gallery/what_is_csgo_csgodb.PNG" style="width:100%" onclick="currentSlide(4)" alt="What is CSGO DB?">
+								</div>
+
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
+			</div>
+		</section>
 
 		<!-- Footer -->
 			<footer id="footer">
@@ -70,6 +127,7 @@
 			<script src="../assets/js/skel.min.js"></script>
 			<script src="../assets/js/util.js"></script>
 			<script src="../assets/js/main.js"></script>
+			<script src="../assets/js/gallery_slideshow.js"></script>
 
 	</body>
 </html>
