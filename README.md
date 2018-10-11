@@ -1,5 +1,3 @@
-# justinkrumlauf.me
-
 ## Contact Me: ##
 Email: jtkrumlauf@gmail.com
 
