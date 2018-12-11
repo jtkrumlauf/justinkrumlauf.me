@@ -49,17 +49,19 @@
 						<div class="content">
 							<h2> Reinforcment Learning </h2>
               						<h5><i> Uploaded on Dec. 10th, 2018 </i></h5>
-							<h5><i> Introduction </i></h5>
+							<h4><i> Introduction </i></h4>
               						<p><span class="image right"><img src="images/qlearning.png" alt="reinforcment_learning_img"></span> In my opinion, reinforcement learning is the most interesting field in artificial intelligence. In concept, reinforcement learning is fairly simple. It works on a reward system, rewarding the model when it does something correct and punishing it when it does something wrong. Reinforcement learning is used to find the ideal solution, maximizing the reward the model is receiving. Imagine the following example: you are standing in front of a massive hedge maze. Every time you reach a dead end, you are forced to start again. Imagine that everytime you make a correct turn, you receive $10, but every time you make a wrong turn, you loose $20. As a result, you will learn the optimal way to traverse the maze while maximizing the money you gain. In the following post, I will detail how reinforcement learning algorithms are used and a specific form of reinforcement learning: Q-Learning.</p>
-							<h5><i> Q Learning </i></h5>
+							<h4><i> Q Learning </i></h4>
 							<p> Q-Learning finds an optimal solution in the sense that it maximizes the total reward over n successive steps, starting from the current state. Q-Learning can find the optimal actions based on any given finite Markov Decision Process, given infinite exploration time. In other words, Q-Learning is theoretically able to find the solution to any finite amount of choices. It’s goal is to maximize its total (future) reward. There are many applications of Q-Learning, my favorite being the deep Q Learning methods used in Mario-AI. The algorithm uses raw pixel sequences and saves them into memory and trains on them later, where “training” means to accurately predict the expected action-reward values based on collected memories. When the memory starts to get full (default size of 250k entries), new entries start to replace older ones. For training data, batches, examples are chosen randomly and rewards of memories are re-estimated based on what the network has learned so far. After tons of math, dropout, ReLu, the model is finally able to play the game in the most optimized way possible. You can visit Aleju’s GitHub repository (<a href="https://github.com/aleju/mario-ai">https://github.com/aleju/mario-ai</a>) to learn more about his implementation. </p>
-							<h5><i> Conclusion </i></h5>
+							<h4><i> Conclusion </i></h4>
 							<p> Reinforcement Learning is being used by cutting edge researchers to help developed artificial general intelligence (AGI). OpenAI are at the forefront of  this development (their research can be found here: <a href="https://openai.com/research/#publications">https://openai.com/research/#publications</a>) and are using various methods of reinforcement learning to train advanced models. Overall, there are many applications of Reinforcement Learning are seemingly infinite and will shape AI in the near-future.</p>
 						</div>
 					</div>
 				</div>
 			</section>
-      
+      			
+			<hbr>
+			
       		<!-- Three -->
       			<section id="three" class="wrapper style2">
 				<div class="inner">
@@ -67,9 +69,9 @@
 						<div class="content">
 							<h2> Machine Learning Basics </h2>
               						<h5><i> Uploaded on Nov. 11th, 2018 </i></h5>
-							<h5><i> Supervised Learning </i></h5>
+							<h4><i> Supervised Learning </i></h4>
               						<p> Supervised learning is typically used for classification; when we want to map input to outputs or regression. The goal is to find specific relationships between different input data in order to produce a correct output. However, the only way for model to produce a ‘correct’ is due to the training data. In the real world, training data is often ‘noisy’, or incorrect, which will reduce the effectiveness of your model. Ultimately, supervised learning is used when you know what the output should be, giving explicit labels to data. There are many algorithms that incorporate aspects of supervised learning, however the most common are regression and support vector machines (SVMs). These algorithms are used in aspects of speech recognition, spam detection, pattern recognition and countless others.</p>
-							<h5><i> Unsupervised Learning </i></h5>
+							<h4><i> Unsupervised Learning </i></h4>
 							<p> Unlike supervised learning, unsupervised learning uses test data that has not been classified, labeled or otherwise categorized. Rather than classifying information and responding to feedback, unsupervised learning reacts based on presence or absence of data. Consider the following analogy: Imagine putting a young child in a room with a box that has a square hole cut in the top, then giving him different shaped blocks (a triangle, circle, hexagon, square, etc.). You leave the child in the room for an indeterminate amount of time and when you return, you give the child a new set of blocks. You hope the child is able to correctly select what block fits in the top of the box and which blocks don’t. In this example, the child represents the model and blocks initial blocks represent the training data. You hope the child will be able to solve the puzzle given a new set of blocks, but don’t know for sure, which is similar to unsupervised learning. Unsupervised learning is often used in conjunction with neural networks, which will be discussed in further detail later. Some common algorithms that use unsupervised learning are k-means and clustering. </p>
 						</div>
 					</div>
