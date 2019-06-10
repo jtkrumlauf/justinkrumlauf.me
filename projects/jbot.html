@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Justin Krumlauf Official Website</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="../assets/css/main.css" />
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="logo"><a href="../index.html"> Home </a></div>
+				<a href="#menu">Menu</a>
+			</header>
+
+		<!-- Nav -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="../index.html"> Home </a></li>
+				<li><a href="../projects.html"> Projects </a></li>
+				<li><a href="../gallery.html"> Gallery </a></li>
+				<li><a href="../aboutme.html"> About Me </a></li>
+				<li><a href="../contact.html"> Contact </a></li>
+			</ul>
+			<ul class="links">
+				<li><a>  </a></li>
+			</ul>
+			<ul class="links">
+				<li><a href="../images/justin_t_krumlauf_resume.pdf" target="_blank" class="icon fa-book"> Resume </a></li>
+				<li><a href="https://github.com/jtkrumlauf" target="_blank" class="icon fa-github"> GitHub </a></li>
+				<li><a href="https://www.linkedin.com/in/jtkrumlauf/" target="_blank" class="icon fa-linkedin"> LinkedIn </a></li>
+			</ul>
+		</nav>
+		<!-- One -->
+			<section id="One" class="wrapper style3">
+				<div class="inner">
+					<header class="align-center">
+						<h2> jBot </h2>
+					</header>
+				</div>
+			</section>
+
+		<!-- Two -->
+			<section id="two" class="wrapper style2">
+				<div class="inner">
+					<div class="box">
+						<div class="content">
+							<h2><span class="image right"><img src="images/jbot_preview.jpg" alt="jbot_preview"/></span> View Photos: <a href="../gallery/jbot_photos.html">HERE</a></h2>
+							<h2> GitHub Repository: <a href="https://github.com/jtkrumlauf/jBot" target="_blank">HERE</a></h2>
+              <h2> About </h2>
+	      <p>*Note: It is highly recommended that you have a basic understanding of Starcraft II before reading the following description of jBot*</p>
+	      						<p> jBot is a bot made for Starcraft II that has beaten Bilzzard's easy, medium, and hard AI. The goal was to create a simple and easy to follow bot that follows a set of predetermined instructions and makes decisions based on the current game state. </p>
+							
+							<h2> How it was Made </h2>
+							<p> jBot was created using DeepMind's Starcraft II Learning Environment (PySC2) and various asynchronous functions. One challenge for me was grasping the concept of asynchronous coroutines and how they differed from multithreading. I found the following analogy helpful in developing my understanding: You are cooking in a resturant. An order comes in for eggs and toast...</p>
+							<ul>
+								<li><strong> Synchronous:</strong> you cook the eggs then you cook the toast.</li>
+								<li><strong> Asynchronous, Single Thread:</strong> you start the eggs cooking and set a timer. You start the toast cooking, and set a timer. While they are both cooking, you clean the kitchen. When the timers go off, you take the eggs off the stove and toast out of the toaster and serve them.</li>
+								<li><strong> Asynchronous, Multi-Threaded:</strong> you hire two more cooks, one to cook eggs and one to cook toast. Now you have the problem of coordinating the cooks so that they do not conflict with each other in the kitchen when sharing ingredients and resources.</li>
+							</ul>
+
+							<p> In the case of jBot, we do not need multiple processes running at the same time, i.e multithreading. It made the most sense to use asynchronous functions running on a single thread. As a result, jBot is able to queue multiple work orders, wait for them to finish, and then perform a certain action with that unit or building.</p>
+
+							<h2> Decision Making Process </h2>
+							<p> jBot makes decisions based on a hierchy of predetermined parameters. The bot is constantly 'looking' at it's environment to see if any of the aforementioned parameters have been met. For example, the bot is told that it should create another base when the game reaches around 1 minute 30 seconds and it has enough resources. Given this parameter, every game tick, the bot checks if this criteria has been met, if so it performs the action. This is true for every decision that the bot makes throughout the game. </p>
+							<p> Due to the somewhat linear nature of the bot's decision making process, it is unable to adapt to the opponents stratagies. When writing the attack and defense logic, I decided on a fast rush stratagy. I hoped that this would catch the enemy off-guard with few troops to defend. However, the longer the game progresses, jBot's probability of winning drops drastically. </p>
+							<h2> The Future of jBot </h2>
+							<p> There are many things I hope to implement into jBot in the future. Here is a short list in order of priority: </p>
+							<ol>
+								<li> Clustering of units to attack in waves instead of one at a time </li>
+								<li> Add a late game stratagy as a failsafe </li>
+								<li> Improve attack and defense logic </li>
+								<li> Improve overall preformance and decision making process </li>
+							</ol>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="container">
+					<ul class="icons">
+            <li><a href="https://github.com/jtkrumlauf" target="_blank" class="icon fa-github"><span class="label"> Github </span></a></li>
+						<li><a href="https://www.linkedin.com/in/jtkrumlauf/" target="_blank" class="icon fa-linkedin"><span class="label"> LinkedIn </span></a></li>
+						<li><a href="../contact.html" class="icon fa-envelope-o"><span class="label"> Email </span></a></li>
+						<li><a href="../images/justin_t_krumlauf_resume.pdf" target="_blank" class="icon fa-book"><span class="label"> Resume </span></a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="../assets/js/jquery.min.js"></script>
+			<script src="../assets/js/jquery.scrollex.min.js"></script>
+			<script src="../assets/js/skel.min.js"></script>
+			<script src="../assets/js/util.js"></script>
+			<script src="../assets/js/main.js"></script>
+
+	</body>
+</html>
